@@ -1,0 +1,478 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:Varela;
+}
+@font-face{
+  font-family: Varela;
+  src:url(/Varela.ttf);
+}
+@font-face{
+  font-family: Yereva;
+  src: url(/YesevaOne.ttf);
+}
+.fundal {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(4, 0, 15, 0.5), rgba(4, 0, 15, 0.5)), url(/mamaliga4.png);
+  background-position: center;
+  background-size: cover; 
+  position: relative;
+}
+#header nav a img{
+  width: 150px;
+  margin-left: 50px;
+  opacity: 95%;
+}
+nav{
+  display: flex;
+  padding: 10px 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-toggler-icon {
+  background-color: white !important;
+  border: 5px solid white !important; 
+}
+
+.links{
+  flex: 1;
+  text-align: center;
+  
+  
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav .nav-item {
+  list-style: none;
+  display: inline-block;
+  padding: 12px 30px;
+  position: relative;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white ;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.links ul li a:hover{
+  color: lightcoral !important;
+
+}
+@media (max-width: 840px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center the text within the column */
+}
+  .book {
+      display: block;
+      margin: 20px auto; /* Center the button horizontally with margin */
+  }
+}
+.book{
+  padding: 15px 15px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  transition: 0.4s;
+  cursor: pointer;
+  
+}
+.book:hover{
+  background-color: white;
+  color: lightcoral;
+  transition: 0.45s;
+}
+.intro{
+  color: white;
+  margin-left: 10%;
+  margin-top:10%;
+  font-size: 32px;
+}
+@media (max-width: 840px) {
+  .intro{
+    text-align: center;
+  }
+}
+.intro h1{
+  font-family: Yereva;
+}
+.intro button{
+  margin-top: 30px;
+}
+.comand{
+  padding: 15px 25px;
+  background-color: transparent;
+  color: white;
+  border: solid 1px white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.comand:hover{
+  background-color: white;
+  transition: 0.3s;
+  color: lightcoral;
+  padding: 20px 30px;
+}
+
+
+#despre{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(32, 23, 33) ;
+  overflow: hidden;
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.img-about{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-left: 50px;
+  margin-top: 150px;
+  box-shadow: -22px 22px rgb(245, 193, 115);
+  
+}
+.text-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-despre{
+  font-family: Yereva;
+  font-size: 52px;
+  color: white;
+  margin-top: 60px;
+}
+.lorem{
+ margin-top: 100px;
+ margin-right: 40px;
+ margin-left: 40px;
+ font-size: 20px;
+ color: white;
+
+}
+@media (max-width: 840px) {
+  .meniu-list {
+      flex-direction: column;
+  }
+  
+  .meniu-box {
+      margin-bottom: 20px;
+  }
+}
+#meniu{
+  width: 100%;
+  min-height: 450vh;
+  background-color: rgb(52, 36, 54);
+  overflow: hidden;
+}
+.box2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-meniu{
+  font-family: Yereva;
+  font-size: 52px;
+  color: white;
+  margin-top: 120px;
+}
+
+.dejun , .prânz, .cină, .desert, .băuturi, .gustări{
+  color: white;
+  font-size: 40px;
+}
+.meniu-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+  height: fit-content;
+}
+.meniu-box{
+  background-color: white;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  flex:1;
+}
+.meniu-box img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: center;
+}
+.meniu-body{
+  padding: 16px;
+  flex-direction: column;
+}
+.meniu-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.meniu-pret{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.meniu-pret button{
+  background-color: white;
+  color: lightcoral;
+  border: solid 1px;
+  border-radius: 30px;
+  width: 90px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.meniu-pret button:hover{
+  background-color: lightcoral;
+  color: white;
+  transition: 0.4s;
+}
+.pret{
+  margin-top: 8px;
+  color: lightcoral;
+  font-weight: bold;
+}
+.box2-1, .box2-2, .box2-3, .box2-4, .box2-5, .box2-6{
+  margin-top: 50px;
+  margin-left: 4%;
+}
+
+@media (max-width: 840px) {
+  .contact-box2,
+  .contact-box3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  
+  .container {
+      width: 90%; /* Adjust container width for smaller screens */
+  }
+}
+#contact{
+  width: 100%;
+  min-height: 170vh;
+  background-color: rgb(60,47,50);
+  position: relative;
+  overflow: hidden;
+
+  padding: 20px;
+}
+.contact-box,
+.contact-box2,
+.contact-box3 {
+    margin-bottom: 20px; /* Add margin to separate sections */
+}
+
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-box h3{
+  font-family: Yereva;
+  color: white;
+}
+.contact-box p{
+  color: white;
+}
+.contact-title{
+  font-family: Yereva;
+  font-size: 52px;
+  color: white;
+  margin-top: 40px;
+}
+.contact-box2{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container{
+  width: 500px;
+  background: rgb(43,22,27);
+  height: 450px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+#status{
+  text-align: center;
+  font-size: 1.5em;
+  background: #3498db;
+  color: #fff;
+  padding: 5px;
+  width: 85%;
+  margin: 2px auto;
+  transform-origin: bottom center;
+  border-radius: 2px;
+  display: none;
+  transform: scale(0);
+  animation: popStatus .3s ease-out forwards;
+}
+
+@keyframes popStatus{
+  80%{
+      transform: scale(1.2);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+form>*{
+  margin: 5px;
+}
+
+.container>*{
+  margin: 10px;
+}
+
+input{
+  width: 90%;
+  height: 30px;
+  font-size: 1.3em;
+  padding-left: 5px;
+  border: 1px solid #757575;
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea{
+  width: 90%;
+  font-size: 1.3em;
+  padding: 5px;
+  resize: none;
+  height: 150px;
+  border: 1px solid #757575;
+
+}
+
+.button-form{
+  height: 40px;
+  padding: 2px 30px;
+  font-size: 1.5em;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.button-form:focus{
+  outline: none;
+}
+
+.button-form:hover{
+  background: white;
+  color: lightcoral;
+  padding: 2px 36px;
+}
+.contact-box3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.program-lucru{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+.program-lucru h2{
+  font-family: Yereva;
+  margin-bottom: 30px;
+}
+.program-lucru p{
+  margin-top: 5px;
+}
+.Locatii{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.Locatii h2{
+  font-family: Yereva;
+  margin-bottom: 30px;
+}
+.Locatii p{
+  margin-top: 5px;
+}
+.copyright{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center; 
+  color: white;
+  margin-bottom: 20px;
+}
+#basket-container {
+  position:fixed;
+  bottom: 20px; 
+  right: 2px; 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+#basket-container img {
+  width: 20px; 
+  margin-right: 2px; 
+}
+
+#basket-count {
+  background-color: #ff0000; 
+  color: #ffffff; 
+  border-radius: 50%; 
+  padding: 5px; 
+  font-size: 10px; 
+}
+#basket-icon{
+  width: 40px; 
+  height: 40px;
+}

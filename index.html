@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaMoldoveni</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style1.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+    <div class="fundal">
+        <div id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <a class="navbar-brand" href="index.html"><img src="/Logo_final-removebg-preview.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="links">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#acasa">Acasă</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#despre">Despre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#meniu">Meniu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <button class="book btn btn-outline-light">Rezervează o masă</button>
+                </div>
+            </nav>
+        </div>
+        <div class="intro">
+            <h1 class="text-white">Delicios. Tradițional.<br> Din Inimă.</h1>
+            <button class="comand btn btn-outline-light">Comandă</button>
+        </div>
+        
+    </div>
+
+    <section id="despre" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="/romanian_food.jpg" alt="food" class="img-about img-fluid">
+                </div> 
+                <div class="col-lg-6 text-about">
+                    <h1 class="title-despre">Despre Noi</h1>
+                    <p class="lorem">
+                        "LaMoldoveni" nu este doar un restaurant, ci un colț de rai gastronomic în care se împletesc
+                        tradiția, gustul autentic și ospitalitatea moldovenească. Noi nu oferim doar mâncare, ci o
+                        călătorie culinară în inima Moldovei, unde fiecare preparat este o poveste spusă cu
+                        ingrediente proaspete și dragoste pentru bucătăria tradițională.
+                        Înăuntrul ușilor noastre, veți descoperi un univers în care tradițiile se îmbină armonios cu
+                        gustul rafinat. Decorul plin de căldură și culori vă va purta într-o călătorie în timp,
+                        oferindu-vă senzația autentică a unei case moldovenești primitoare. Mesele noastre sunt
+                        aranjate cu grijă, pregătite să vă primească într-o atmosferă caldă și prietenoasă.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="basket-container" style="display: none; position: fixed; bottom: 10px; right: 10px;">
+        <img src="/wicker-basket.png" alt="Basket Icon" id="basket-icon" style="width: 50px; height: 50px;">
+        <span id="basket-count" style="background-color: red; color: white; border-radius: 50%; padding: 5px 10px; position: absolute; top: 0; right: 0; font-size: 14px;"></span>
+      </div>
+    <section id="meniu">
+        <div class="box2">
+            <h1 class="title-meniu">Meniu</h1>
+              
+        </div>
+        <div class="box2-1">
+            <h2 class="dejun">Mic Dejun</h2>
+        </div> 
+        <div class="meniu-list">
+            <div class="meniu-box">
+                <img src="/omleta.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Dejun Rapid</p>
+                    <div class="meniu-pret">
+                        <p class="pret">40 mdl</p>
+                        <button class="add-to-cart" data-price="40">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/pate.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Toast cu pate de ficat</p>
+                    <div class="meniu-pret">
+                        <p class="pret">50 mdl</p>
+                        
+                        <button class="add-to-cart" data-price="50">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/omleta-legume.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Omletă cu legume</p>
+                    <div class="meniu-pret">
+                        <p class="pret">65 mdl</p>
+                        <button class="add-to-cart" data-price="65">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/omleta-cirnaciori.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Omletă cu cârnăciori</p>
+                    <div class="meniu-pret">
+                        <p class="pret">70 mdl</p>
+                        <button class="add-to-cart" data-price="70">În coș</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2-2">
+            <h2 class="prânz">Prânz</h2>
+        </div>
+        
+
+        <div class="meniu-list">
+            <div class="meniu-box">
+                <img src="/zeamă.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Zeamă</p>
+                    <div class="meniu-pret">
+                        <p class="pret">60 mdl</p>
+                        <button class="add-to-cart" data-price="60">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/bors.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Borș</p>
+                    <div class="meniu-pret">
+                        <p class="pret">60 mdl</p>
+                        <button class="add-to-cart" data-price="60">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/ciorba.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Ciorbă</p>
+                    <div class="meniu-pret">
+                        <p class="pret">65 mdl</p>
+                        <button class="add-to-cart" data-price="65">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/dovleac.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Supă de dovleac</p>
+                    <div class="meniu-pret">
+                        <p class="pret">70 mdl</p>
+                        <button class="add-to-cart" data-price="70">În coș</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box2-3">
+            <h2 class="cină">Cină</h2>
+        </div>
+
+        <div class="meniu-list">
+            <div class="meniu-box">
+                <img src="/mamaliga-pe-planseta-de-lemn.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Mămăligă cu friptură</p>
+                    <div class="meniu-pret">
+                        <p class="pret">120 mdl</p>
+                        <button class="add-to-cart" data-price="120">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/Sarmale-vegane-in-vas-de-lut.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Sarmale de casă</p>
+                    <div class="meniu-pret">
+                        <p class="pret">120 mdl</p>
+                        <button class="add-to-cart" data-price="120">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/racituri-de-porc-sau-piftie-de-porc.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Răcitură de porc</p>
+                    <div class="meniu-pret">
+                        <p class="pret">145 mdl</p>
+                        <button class="add-to-cart" data-price="145">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/fasole.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Fasole bătută</p>
+                    <div class="meniu-pret">
+                        <p class="pret">145 mdl</p>
+                        <button class="add-to-cart" data-price="145">În coș</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="box2-4">
+            <h2 class="desert">Desert</h2>
+        </div>
+
+        <div class="meniu-list">
+            <div class="meniu-box">
+                <img src="/reteta-de-papanasi.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Păpănași cu coacăză</p>
+                    <div class="meniu-pret">
+                        <p class="pret">80 mdl</p>
+                        <button class="add-to-cart" data-price="80">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/baba-neagra.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Babă neagră</p>
+                    <div class="meniu-pret">
+                        <p class="pret">80 mdl</p>
+                        <button class="add-to-cart" data-price="80">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/cusma-lui-guguta.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Cușma lui Guguță</p>
+                    <div class="meniu-pret">
+                        <p class="pret">95 mdl</p>
+                        <button class="add-to-cart" data-price="95">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/vărzări.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Vărzări cu cireșe</p>
+                    <div class="meniu-pret">
+                        <p class="pret">105 mdl</p>
+                        <button class="add-to-cart" data-price="105">În coș</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box2-5">
+            <h2 class="băuturi">Băuturi</h2>
+        </div>
+
+        <div class="meniu-list">
+            <div class="meniu-box">
+                <img src="/izvar.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Izvar</p>
+                    <div class="meniu-pret">
+                        <p class="pret">30 mdl</p>
+                        <button class="add-to-cart" data-price="30">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/visinata.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Vișinată</p>
+                    <div class="meniu-pret">
+                        <p class="pret">40 mdl</p>
+                        <button class="add-to-cart" data-price="40">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/vin-alb.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Vin alb 0.75l</p>
+                    <div class="meniu-pret">
+                        <p class="pret">175 mdl</p>
+                        <button class="add-to-cart" data-price="175">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/Vinul rosu.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Vin roșu 0.75l</p>
+                    <div class="meniu-pret">
+                        <p class="pret">175 mdl</p>
+                        <button class="add-to-cart" data-price="175">În coș</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box2-6">
+            <h2 class="gustări">Gustări</h2>
+        </div>
+
+        <div class="meniu-list">
+            <div class="meniu-box">
+                <img src="/vitamina.png" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Vitamina</p>
+                    <div class="meniu-pret">
+                        <p class="pret">45 mdl</p>
+                        <button class="add-to-cart" data-price="45">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/Limba-soacrei.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Limba soacrei</p>
+                    <div class="meniu-pret">
+                        <p class="pret">70 mdl</p>
+                        <button class="add-to-cart" data-price="70">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/vinegrette.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Vinigret</p>
+                    <div class="meniu-pret">
+                        <p class="pret">70 mdl</p>
+                        <button class="add-to-cart" data-price="70">În coș</button>
+                    </div>
+                </div>
+            </div>
+            <div class="meniu-box">
+                <img src="/rulada-din-carne-de-porc.jpg" alt="dejun1">
+                <div class="meniu-body">
+                    <p class="meniu-title">Ruladă din carne de porc</p>
+                    <div class="meniu-pret">
+                        <p class="pret">125 mdl</p>
+                        <button class="add-to-cart" data-price="125">În coș</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    
+    <section id="contact">
+        <div class="contact-box">
+            <h1 class="contact-title">Contact</h1>
+            <h3>Adresa</h3>
+            <p>Șoseaua Hîncești 58</p>
+            <p>+373 688 17 407</p>
+        </div>
+        
+        <div class="contact-box2">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d921.1811695584094!2d28.818161954903307!3d47.00394250852173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2s!4v1702198338582!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <div class="container">
+        
+            <div id="status">Message Sent</div>
+            <form>
+                <input required maxlength="30" type="text" placeholder="Name" name="name">
+                <input required maxlength="50" type="email" placeholder="Email" name="email">
+                <input required maxlength="12" type="number" placeholder="Contact Number" name="number">
+                <textarea required maxlength="600" name="message" placeholder="Type Your Message Here"></textarea>
+                <button class="button-form" type="submit">Trimite</button>
+            </form>
+            </div>
+        </div>
+        <div class="contact-box3">
+            <div class="program-lucru">
+                <h2>Program de lucru</h2>
+                <p>Luni : 10:00 - 22:00</p> 
+                <p>Marți : 10:00 - 22:00</p>
+                <p>Miercuri : 10:00 - 22:00</p> 
+                <p>Joi : 10:00 - 22:00</p> 
+                <p>Vineri : 10:00 - 22:00</p>
+                <p>Sâmbătă : 10:00 - 22:00</p>
+                <p>Duminică : 10:00 - 22:00</p>
+            </div>
+            <div class="Locatii">
+                <h2>Locații</h2>
+                    <p>Chișinău șos. Hîncești 58</p>
+                    <p>Chișinău bd. Decebal 21</p>
+                    <p>Chișinău bd. Ștefan 34</p>
+                    <p>Cahul str. Ștefan cel Mare 42</p>
+                    <p>Soroca str. Independenței 18</p>
+                    <p>Bălți str. Hotin 17</p>
+                
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023</p>
+    </section>
+    <!-- Add similar modifications for other sections -->
+
+    <script>
+        document.querySelectorAll('.links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '30px',
+            duration: 2000,
+            reset: true
+        });
+
+        // Update the classes and ids according to your structure
+        sr.reveal(`
+            .intro, .comand,
+            #despre .img-about, #despre .text-about,
+            #meniu .box2, #meniu .box2-1, #meniu .box2-2, #meniu .box2-3, #meniu .box2-4, #meniu .box2-5, #meniu .box2-6,
+            #contact .contact-box, #contact .contact-box2, #contact .contact-box3`, {
+            interval: 200
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let basketCount = 0;
+  
+     
+      const basketContainer = document.getElementById('basket-container');
+      const basketCountElement = document.getElementById('basket-count');
+  
+     
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+  
+      
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+          
+          const price = parseInt(this.dataset.price);
+  
+          
+          basketCount += 1;
+          basketCountElement.textContent = basketCount;
+  
+          
+  
+          
+          console.log(`Item added to cart. Price: ${price}`);
+        });
+      });
+    });
+  </script>
+   <script>
+    let basketCount = 0;
+
+    document.querySelectorAll('.meniu-box button').forEach(button => {
+      button.addEventListener('click', function () {
+        basketCount++;
+        updateBasketCount();
+      });
+    });
+
+    function updateBasketCount() {
+      const basketCountElement = document.getElementById('basket-count');
+      basketCountElement.textContent = basketCount;
+      
+      // Show the basket container when the count is greater than 0
+      if (basketCount > 0) {
+        document.getElementById('basket-container').style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
